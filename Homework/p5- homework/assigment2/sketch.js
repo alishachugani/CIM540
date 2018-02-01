@@ -11,7 +11,7 @@ function draw() {
   // put drawing code here
   stroke(255)
   strokeWeight(1)
-  fill(255,204,0)
+  fill(255,215,0)
   ellipse(centerX+100,centerY,300,300)
 
   noStroke
