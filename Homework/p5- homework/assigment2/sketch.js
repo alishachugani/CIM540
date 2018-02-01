@@ -24,5 +24,5 @@ function draw() {
 
   noStroke
   fill(255,140,0)
-  triangle(centerY+50, centerX + 25, centerY + 25, centerX - 25, centerY + 25)
+  triangle(centerY+50, centerX+25, centerY+25, centerX-25, centerY+25)
 }
