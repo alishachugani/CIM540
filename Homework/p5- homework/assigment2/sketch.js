@@ -14,6 +14,7 @@ function setup() {
   button.mousePressed(changeBG);
 
   sel = createSelect();
+  sel.option("red");
   sel.option("blue");
   sel.option("white");
 
@@ -43,8 +44,7 @@ function draw() {
   ellipse(centerX+50,centerY-40,25,25);
   ellipse(centerX+150,centerY-40,25,25);
 
-  noStroke();
-  fill(lineColor);
+  stroke(lineColor);
   line(centerX + 50 ,centerY + 40, centerX + 150, centerY + 40);
 }
 
