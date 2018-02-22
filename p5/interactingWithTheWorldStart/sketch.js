@@ -7,6 +7,10 @@ var bgImage;
 var carnivalButton;
 var partyButton;
 
+var showHide;
+
+var hiding = false;
+
 function preload() {
    carnival = loadImage("assets/carnival.jpg");
    party = loadImage("assets/party.jpg");
@@ -22,16 +26,33 @@ function setup() {
     });
 
     partyButton = createButton("Let's Part!!");
-    partyButton.position(100,10);
+    partyButton.position(150,10);
     partyButton.mousePressed(function(){
       bgImage = party;
     });
+
+    showHide= createButton("Show Hide Clown");
+    showHide.position(250,10);
+    showHide.mousePressed(function(){
+
+
+        if(hiding == false){
+          hiding = true;
+        }else{
+          hiding = false;
+        }
+
+
+    });
+
+
 }
 
 function draw() {
   background(255);
   image(bgImage,0,0);
 
+  if(hiding == false){
   fill(255, 255, 255);
 
   strokeWeight(1);
@@ -49,7 +70,7 @@ function draw() {
   noFill();
   strokeWeight(4);
   arc(centerX, centerY, 100, 100, 0, PI);
-
+  }
   if(mouseX < width/2){
     console.log("left side of screen");
     stroke("purple");
