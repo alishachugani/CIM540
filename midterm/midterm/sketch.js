@@ -95,54 +95,36 @@ function mousePressed(){
   }else{
   mexico = false;
  }
-}
-
-function mousePressed(){
-  var indDist = dist(mouseX,mouseY, indiaX, indiaY);
-  if(indDist <= 20) {
-    india = true;
-  }else{
-  india = false;
- }
-}
-
-function mousePressed(){
+ var indDist = dist(mouseX,mouseY, indiaX, indiaY);
+ if(indDist <= 20) {
+   india = true;
+ }else{
+ india = false;
+  }
   var chiDist = dist(mouseX,mouseY, chinaX, chinaY);
   if(chiDist <= 20) {
     china = true;
   }else{
   china = false;
  }
-}
-
-function mousePressed(){
-  var itaDist = dist(mouseX,mouseY, italiaX, italiaY);
-  if(itaDist <= 20) {
-    italia = true;
-  }else{
-  italia = false;
- }
-}
-
-function mousePressed(){
+ var itaDist = dist(mouseX,mouseY, italiaX, italiaY);
+ if(itaDist <= 20) {
+   italia = true;
+ }else{
+ italia = false;
+  }
   var petDist = dist(mouseX,mouseY, petraX, petraY);
   if(petDist <= 20) {
     petra = true;
   }else{
   petra = false;
  }
-}
-
-function mousePressed(){
-  var braDist = dist(mouseX,mouseY, brasilX, brasilY);
-  if(braDist <= 20) {
-    brasil = true;
-  }else{
-  brasil = false;
- }
-}
-
-function mousePressed(){
+ var braDist = dist(mouseX,mouseY, brasilX, brasilY);
+ if(braDist <= 20) {
+   brasil = true;
+ }else{
+ brasil = false;
+  }
   var perDist = dist(mouseX,mouseY, peruX, peruY);
   if(perDist <= 20) {
     peru = true;
@@ -150,3 +132,57 @@ function mousePressed(){
   peru = false;
  }
 }
+
+// function mousePressed(){
+//   var indDist = dist(mouseX,mouseY, indiaX, indiaY);
+//   if(indDist <= 20) {
+//     india = true;
+//   }else{
+//   india = false;
+//  }
+// }
+
+// function mousePressed(){
+//   var chiDist = dist(mouseX,mouseY, chinaX, chinaY);
+//   if(chiDist <= 20) {
+//     china = true;
+//   }else{
+//   china = false;
+//  }
+// }
+
+// function mousePressed(){
+//   var itaDist = dist(mouseX,mouseY, italiaX, italiaY);
+//   if(itaDist <= 20) {
+//     italia = true;
+//   }else{
+//   italia = false;
+//  }
+// }
+
+// function mousePressed(){
+//   var petDist = dist(mouseX,mouseY, petraX, petraY);
+//   if(petDist <= 20) {
+//     petra = true;
+//   }else{
+//   petra = false;
+//  }
+// }
+//
+// function mousePressed(){
+//   var braDist = dist(mouseX,mouseY, brasilX, brasilY);
+//   if(braDist <= 20) {
+//     brasil = true;
+//   }else{
+//   brasil = false;
+//  }
+// }
+
+// function mousePressed(){
+//   var perDist = dist(mouseX,mouseY, peruX, peruY);
+//   if(perDist <= 20) {
+//     peru = true;
+//   }else{
+//   peru = false;
+//  }
+// }
