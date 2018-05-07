@@ -1,5 +1,5 @@
 
-var targetPosX = [0,200,400,600];
+var targetPosX = [0,200,400,600,800,1000,1200];
 
 var targetPosY = [0,200];
 
