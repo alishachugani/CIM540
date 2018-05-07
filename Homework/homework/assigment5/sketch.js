@@ -1,7 +1,14 @@
-function setup() {
-  // put setup code here
+var mic;
+
+function setup(){
+  createCanvas(200,200);
+  mic = new p5.AudioIn()
+  mic.start();
 }
 
-function draw() {
-  // put drawing code here
+function draw(){
+  background(0);
+  micLevel = mic.getLevel();
+  fill(255, 204, 0);
+  rect(60, constrain(height-micLevel*height*5, 0, height), 20, 20);
 }
