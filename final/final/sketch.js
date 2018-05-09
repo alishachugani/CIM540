@@ -4,6 +4,10 @@ var person;
 var curPosition = 0;
 
 
+function preload() {
+  soundFormats('mp3', 'ogg');
+  mySound = loadSound('assets/music.mp3');
+}
 
 function setup() {
   // put setup code here
@@ -11,6 +15,8 @@ function setup() {
   bImage = loadImage("assets/background1.png");
   person = loadImage("assets/right1.png")
 
+  mySound.setVolume(0.1);
+  mySound.play();
 
 }
 
@@ -33,3 +39,5 @@ function draw() {
     }
   }
 }
+
+//had some problems with my original idea and got really frustraded so I decided to make it way simpler. hope you have a good summer! 
